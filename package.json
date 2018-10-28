@@ -2,6 +2,7 @@
   "name": "Przypadki",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://kryshtopa.github.io/przypadki/",
   "dependencies": {
     "material-design-lite": "^1.3.0",
     "react": "^16.5.2",
