@@ -127,19 +127,24 @@ class CasesQuiz extends Component {
 
 	backQuizHandler = () => {
 		let prevStage;
+		let casesChosenUpdated = {...this.state.casesChosen};
 
 		if (this.state.showResults) {
 			prevStage = this.state.casesQuizCurrentStage;
-			this.setState({
-				showResults: false,
-				casesQuizCurrentStage: prevStage
-			});
 		} else {
 			prevStage = this.state.casesQuizCurrentStage - 1;
-			this.setState({
-				casesQuizCurrentStage: prevStage
-			});
 		}
+
+		for (var i = prevStage; i <= 5; i++) {
+			casesChosenUpdated[this.state.casesQuizStages[i]]  = '';
+		}
+
+		this.setState({
+			showResults: false,
+			casesQuizCurrentStage: prevStage,
+			casesChosen: casesChosenUpdated
+		});
+
 		this.updateProgressBar(prevStage - 1, 4)
 	}
 
@@ -150,8 +155,6 @@ class CasesQuiz extends Component {
 
 	render () {		
 		let mainRender;
-
-		console.log(this.state)
 		
 		if (this.state.showResults) {
 			mainRender = (
