@@ -34,8 +34,8 @@ class CasesQuiz extends Component {
 			"liczba mnoga"
 		],
 		gender: [
-			"menski",
-			"zenski",
+			"męski",
+			"żeński",
 			"nijaki"
 		],
 		genderPlus: [],

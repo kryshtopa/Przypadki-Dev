@@ -2,11 +2,11 @@ const cases = {
 	"MIANOWNIK": {
 		"rzeczownik": {
 			"liczba pojedyncza": {
-				"menski": {
+				"męski": {
 					"zwykle": "ø",
 					"albo": "a"
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "a",
 					"albo": "ø, i"
 				},
@@ -16,7 +16,7 @@ const cases = {
 				}
 			},
 			"liczba mnoga": {
-				"menski": {
+				"męski": {
 					"męskoosobowy": {
 						"b, d, f, ch, ł, m, n, р, s, t, w, z": "i",
 						"k, g, r": "y",
@@ -29,7 +29,7 @@ const cases = {
 						"sz, cz, dz, dż, ż, rz, ś, ć, dź, ź, ń, c, l, j": "e"
 					}
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "y",
 					"k, g": "i",
 					"sz, cz, dz, dż, ż, rz, ś, ć, dź, ź, ń, c, l, j": "e"
@@ -41,15 +41,15 @@ const cases = {
 		},
 		"przymiotnik": {
 			"liczba pojedyncza": {
-				"menski": {
+				"męski": {
 				},
-				"zenski": {
+				"żeński": {
 				},
 				"nijaki": {
 				}
 			},
 			"liczba mnoga": {
-				"menski": {
+				"męski": {
 					"męskoosobowy": {
 						"t > ti, d > dzi, ł > li, sz > si, ch > si, st > ści, оnу > eni, ołi > eli": "i",
 						"k > су, g > dzy, r > rzy, c, cz, dz": "y"
@@ -58,7 +58,7 @@ const cases = {
 						"zwykle": "e"
 					}
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "e"
 				},
 				"nijaki": {
@@ -70,7 +70,7 @@ const cases = {
 	"DOPEŁNIACZ": {
 		"rzeczownik": {
 			"liczba pojedyncza": {
-				"menski": {
+				"męski": {
 					"żywotne": {
 						"zwykle": "a"
 					},
@@ -78,7 +78,7 @@ const cases = {
 						"zwykle": "a, u"
 					}
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "y",
 					"k, g": "i"
 				},
@@ -87,12 +87,12 @@ const cases = {
 				}
 			},
 			"liczba mnoga": {
-				"menski": {
+				"męski": {
 					"zwykle": "ów",
 					"sz, cz, dz, dż, ż, rz + c": "y",
 					"ś, ć, ź, dź, ń + l, j": "i"
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "ø"
 				},
 				"nijaki": {
@@ -102,10 +102,10 @@ const cases = {
 		},
 		"przymiotnik": {
 			"liczba pojedyncza": {
-				"menski": {
+				"męski": {
 					"zwykle": "ego"
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "ej"
 				},
 				"nijaki": {
@@ -113,11 +113,11 @@ const cases = {
 				}
 			},
 			"liczba mnoga": {
-				"menski": {
+				"męski": {
 					"zwykle": "ych",
 					"k,g": "ich"
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "ych",
 					"k,g": "ich"
 				},
@@ -131,47 +131,50 @@ const cases = {
 	"CELOWNIK": {
 		"rzeczownik": {
 			"liczba pojedyncza": {
-				"menski": {
-					"zwykle": "owi",
-					"zwykle jednosylabowe": "u"
+				"męski": {
+					"zwykle (ą > ę, ó > o, e > ø, ci > t, rz > r, dzi > d)": "owi",
+					"zwykle jednosylabowe": "u",
+					"-a (g > dz, t > cie)": "ie"
 				},
-				"zenski": {
-					"zwykle": "e, i, y"
+				"żeński": {
+					"zwykle": "ie",
+					"d > dzie, g > dz, r > rz, k > c": "ie",
+					"miękkotematowe": "i, y"
 				},
 				"nijaki": {
 					"zwykle": "u"
 				}
 			},
 			"liczba mnoga": {
-				"menski": {
-					"zwykle": "еmu"
+				"męski": {
+					"zwykle": "om"
 				},
-				"zenski": {
-					"zwykle": "еj"
+				"żeński": {
+					"zwykle": "om"
 				},
 				"nijaki": {
-					"zwykle": "еmu"
+					"zwykle": "om"
 				}
 			}
 		},
 		"przymiotnik": {
 			"liczba pojedyncza": {
-				"menski": {
-					"zwykle": "om"
+				"męski": {
+					"zwykle": "emu"
 				},
-				"zenski": {
-					"zwykle": "om"
+				"żeński": {
+					"zwykle": "ej"
 				},
 				"nijaki": {
-					"zwykle": "om"
+					"zwykle": "emu"
 				}
 			},
 			"liczba mnoga": {
-				"menski": {
+				"męski": {
 					"zwykle": "ym",
 					"k,g": "im"
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "ym",
 					"k,g": "im"
 				},
@@ -185,7 +188,7 @@ const cases = {
 	"BIERNIK": {
 		"rzeczownik": {
 			"liczba pojedyncza": {
-				"menski": {
+				"męski": {
 					"żywotne": {
 						"zwykle": "a"
 					},
@@ -193,7 +196,7 @@ const cases = {
 						"zwykle": "ø"
 					}
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "ę"
 				},
 				"nijaki": {
@@ -201,7 +204,7 @@ const cases = {
 				}
 			},
 			"liczba mnoga": {
-				"menski": {
+				"męski": {
 					"męskoosobowy": {
 						"zwykle": "ów",
 						"sz, cz, dz, dż, ż, rz + c": "y",
@@ -213,7 +216,7 @@ const cases = {
 						"sz, cz, dz, dż, ż, rz, ś, ć, dź, ź, ń, c, l, j": "e"
 					}
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "y",
 					"k, g": "i",
 					"sz, cz, dz, dż, ż, rz, ś, ć, dź, ź, ń, c, l, j": "e"
@@ -225,7 +228,7 @@ const cases = {
 		},
 		"przymiotnik": {
 			"liczba pojedyncza": {
-				"menski": {
+				"męski": {
 					"żywotne": {
 						"zwykle": "ego"
 					},
@@ -234,7 +237,7 @@ const cases = {
 						"k,g": "i"
 					}
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "ą"
 				},
 				"nijaki": {
@@ -242,7 +245,7 @@ const cases = {
 				}
 			},
 			"liczba mnoga": {
-				"menski": {
+				"męski": {
 					"męskoosobowy": {
 						"zwykle": "ych",
 						"k, g": "ich"
@@ -251,7 +254,7 @@ const cases = {
 						"zwykle": "e"
 					}
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "e"
 				},
 				"nijaki": {
@@ -263,10 +266,10 @@ const cases = {
 	"NARZĘDNIK": {
 		"rzeczownik": {
 			"liczba pojedyncza": {
-				"menski": {
+				"męski": {
 					"zwykle": "i, em"
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "ą"
 				},
 				"nijaki": {
@@ -274,10 +277,10 @@ const cases = {
 				}
 			},
 			"liczba mnoga": {
-				"menski": {
+				"męski": {
 					"zwykle": "ami"
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "ami"
 				},
 				"nijaki": {
@@ -287,11 +290,11 @@ const cases = {
 		},
 		"przymiotnik": {
 			"liczba pojedyncza": {
-				"menski": {
+				"męski": {
 					"zwykle": "ym",
 					"k, g": "im"
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "ą"
 				},
 				"nijaki": {
@@ -300,11 +303,11 @@ const cases = {
 				}
 			},
 			"liczba mnoga": {
-				"menski": {
+				"męski": {
 					"zwykle": "ymi",
 					" k, g": "imi"
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "ymi",
 					" k, g": "imi"
 				},
@@ -318,13 +321,13 @@ const cases = {
 	"MIEJSCOWNIK": {
 		"rzeczownik": {
 			"liczba pojedyncza": {
-				"menski": {
+				"męski": {
 					"zwykle": "e, u",
 					"b, f, m, n, p, s, w, z, t > c, d > dz": "ie",
 					"r > rz, ł > l": "e",
 					"k, g, ch, c, dz, sz, rz, ż, cz, l, j, ś, ć, ź, dź, ń": "u"
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "e, y, i",
 					"k > c, g > dz, ch > sz": "e",
 					"c, dz, sz, rz, ż, cz": "y",
@@ -338,10 +341,10 @@ const cases = {
 				}
 			},
 			"liczba mnoga": {
-				"menski": {
+				"męski": {
 					"zwykle": "ach"
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "ach"
 				},
 				"nijaki": {
@@ -351,11 +354,11 @@ const cases = {
 		},
 		"przymiotnik": {
 			"liczba pojedyncza": {
-				"menski": {
+				"męski": {
 					"zwykle": "ym",
 					"k, g": "im"
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "ej"
 				},
 				"nijaki": {
@@ -364,11 +367,11 @@ const cases = {
 				}
 			},
 			"liczba mnoga": {
-				"menski": {
+				"męski": {
 					"zwykle": "ych",
 					"k, g": "ich"
 				},
-				"zenski": {
+				"żeński": {
 					"zwykle": "ych",
 					"k, g": "ich"
 				},
