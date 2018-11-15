@@ -6,7 +6,7 @@ const results = (props) => {
 	const endings1 = cases[props.casesChosen.case][props.casesChosen.word][props.casesChosen.quantity][props.casesChosen.gender];
 	
 	let endings2 = null;
-	if(props.casesChosen.gender === "menski") {
+	if(props.casesChosen.gender === "męski") {
 		if([props.casesChosen.genderPlus] in endings1) {
 			endings2 = endings1[props.casesChosen.genderPlus]
 		} else {
